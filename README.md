@@ -3,11 +3,11 @@
 ![image](icons/app_icon.png)
 
 **High-Performance AI/NPU Accelerated Media Compressor, Splitter & Extractor**  
-**Developer Team:** C3net Development  
-**Binary Name:** `c3avcompressor`  
+**Developer Team:** C3net Development (C0D3D-NET)
+**Binary Name:** `c3avcompressor`
 **Target Systems:** macOS (Apple Silicon M1-M4 & Intel) & Linux (x86_64, aarch64)
 
-[Latest Release](https://github.com/c0d3d-net/C3AVcompressor/releases)
+[Latest Release](https://github.com/c0d3d-net/C3.AVcompressor/releases)
 
 ---
 

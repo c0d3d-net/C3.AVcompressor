@@ -19,6 +19,9 @@
 - **Smart Splitting:** Cut by exact timestamps, equal segment duration, or **AI Scene Boundary Detection** with lossless stream copy or sample-accurate GOP re-encoding.
 
 ---
+[Latest Release](https://github.com/c0d3d-net/C3AVcompressor/releases)
+
+---
 
 ## 📦 Setup Packages (macOS & Debian/Ubuntu)
 
@@ -28,7 +31,7 @@ Pre-built distribution setup packages are generated in the `dist/` directory:
 Installs `c3avcompressor` to `/usr/local/bin`, along with manual pages and shell completions:
 ```bash
 # Double-click 'dist/C3.AVcompressor-0.1.0-macOS.pkg' in Finder, or install via Terminal:
-sudo installer -pkg dist/C3.AVcompressor-0.1.0-macOS.pkg -target /
+sudo installer -pkg dist/c3avcompressor-0.1.0-macOS.pkg -target /
 ```
 
 ### 🐧 Debian / Ubuntu Package (.deb)

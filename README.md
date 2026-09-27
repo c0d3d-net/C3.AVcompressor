@@ -7,6 +7,8 @@
 **Binary Name:** `c3avcompressor`  
 **Target Systems:** macOS (Apple Silicon M1-M4 & Intel) & Linux (x86_64, aarch64)
 
+[Latest Release](https://github.com/c0d3d-net/C3AVcompressor/releases)
+
 ---
 
 ## ⚡ Key Highlights
@@ -17,9 +19,6 @@
 - **Multi-Format Audio Extraction:** Extract and transcode to **AAC, AC3, DTS, WAV, MP3 / MPEG3, FLAC, Opus** with AI psychoacoustic tuning or instant lossless stream copy.
 - **Advanced Video Transcoding:** Hardware-accelerated encoding for **H.264, H.265 (HEVC), AV1, VP9, and ProRes** using Apple VideoToolbox, Linux VAAPI, and NVENC.
 - **Smart Splitting:** Cut by exact timestamps, equal segment duration, or **AI Scene Boundary Detection** with lossless stream copy or sample-accurate GOP re-encoding.
-
----
-[Latest Release](https://github.com/c0d3d-net/C3AVcompressor/releases)
 
 ---
 

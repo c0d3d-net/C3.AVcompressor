@@ -1,0 +1,7 @@
+#!/bin/sh
+# Pre-removal script for Debian/Ubuntu c3avcompressor package
+
+set -e
+
+# Remove installed completions / links if needed
+exit 0

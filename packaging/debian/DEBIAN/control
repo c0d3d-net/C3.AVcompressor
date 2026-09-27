@@ -1,0 +1,14 @@
+Package: c3avcompressor
+Version: 0.1.0
+Section: video
+Priority: optional
+Architecture: amd64
+Maintainer: C3net Development <support@c3net.internal>
+Depends: ffmpeg, libc6 (>= 2.31)
+Recommends: intel-media-va-driver | mesa-va-drivers
+Homepage: https://github.com/C3net/C3.AVcompressor
+Description: C3.AVcompressor - High-performance AI/NPU accelerated video compressor
+ C3.AVcompressor by C3net Development is a next-generation media processing
+ utility that uses NPUs (Apple Neural Engine, Intel NPU, AMD Ryzen AI) to
+ accelerate video compression, splitting, and extraction, outperforming
+ standard CUDA FFmpeg pipelines at a fraction of the energy consumption.

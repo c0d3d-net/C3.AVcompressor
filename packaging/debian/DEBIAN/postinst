@@ -1,0 +1,17 @@
+#!/bin/sh
+# Post-install script for Debian/Ubuntu c3avcompressor package
+
+set -e
+
+# Update man database if mandb is available
+if command -v mandb >/dev/null 2>&1; then
+    mandb -q 2>/dev/null || true
+fi
+
+echo "========================================================================"
+echo "🚀 C3.AVcompressor successfully installed!"
+echo "   Run 'c3avcompressor npu-status' to check NPU & hardware encoders."
+echo "   Developer Team: C3net Development"
+echo "========================================================================"
+
+exit 0

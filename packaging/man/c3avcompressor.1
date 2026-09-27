@@ -1,0 +1,45 @@
+.TH C3AVCOMPRESSOR 1 "September 2026" "0.1.0" "C3.AVcompressor Manual"
+.SH NAME
+c3avcompressor \- High-performance AI/NPU accelerated audio/video compressor, splitter, and extractor
+.SH SYNOPSIS
+.B c3avcompressor
+[\fIOPTIONS\fR] \fICOMMAND\fR [\fIARGS\fR]
+.SH DESCRIPTION
+\fBC3.AVcompressor\fR is developed by \fBC3net Development\fR.
+It harnesses Neural Processing Units (NPUs) such as Apple Silicon Neural Engine (ANE) and Intel/AMD NPUs on Linux to perform real-time AI stream analysis, dynamic rate control (Dynamic CRF), and foveated perceptual quantization, outperforming traditional CUDA FFmpeg pipelines at a fraction of the power consumption.
+.SH COMMANDS
+.TP
+\fBcompress\fR \-i \fIINPUT\fR \-o \fIOUTPUT\fR [\fIOPTIONS\fR]
+Transcode and compress video and audio using NPU AI rate control and hardware encoders (VideoToolbox / VAAPI / NVENC).
+.TP
+\fBsplit\fR \-i \fIINPUT\fR \-o \fIOUTPUT\fR [\fIOPTIONS\fR]
+Split or cut media streams by time ranges, segment duration, or automatic AI scene boundary detection.
+.TP
+\fBextract\fR \-i \fIINPUT\fR \-o \fIOUTPUT\fR [\fIOPTIONS\fR]
+Extract audio tracks (AAC, AC3, DTS, WAV, MP3, FLAC, Opus) or video streams with lossless stream copy or AI psychoacoustic filtering.
+.TP
+\fBprobe\fR \-i \fIINPUT\fR [\fI--json\fR]
+Inspect media streams, codecs, bitrates, channel layouts, and metadata.
+.TP
+\fBnpu-status\fR [\fI--json\fR]
+Display detected NPU hardware, TOPS throughput capability, and hardware video encoders.
+.TP
+\fBbenchmark\fR [\fI--resolution 1080p|4k\fR]
+Run synthetic throughput comparison between CUDA and C3.AVcompressor NPU engine.
+.TP
+\fBcompletions\fR \fIshell\fR
+Generate shell completion scripts (bash, zsh, fish, powershell).
+.SH EXAMPLES
+.B Compress video to HEVC with balanced preset:
+.IP
+c3avcompressor compress -i raw.mov -o compressed.mp4 --video-codec hevc --preset balanced
+.PP
+.B Extract audio to MP3 at 320 kbps:
+.IP
+c3avcompressor extract -i movie.mkv -o audio.mp3 --format mp3 --bitrate 320
+.PP
+.B Split video losslessly at timestamp range:
+.IP
+c3avcompressor split -i stream.mp4 -o clip.mp4 --start 00:01:30 --end 00:05:00 --copy
+.SH AUTHOR
+C3net Development <https://github.com/C3net/C3.AVcompressor>

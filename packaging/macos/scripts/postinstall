@@ -1,0 +1,16 @@
+#!/bin/bash
+# Post-install script for C3.AVcompressor macOS PKG
+
+set -e
+
+# Ensure permissions
+chmod 755 /usr/local/bin/c3avcompressor || true
+chmod 644 /usr/local/share/man/man1/c3avcompressor.1 || true
+
+# Test execution
+if [ -x /usr/local/bin/c3avcompressor ]; then
+    VERSION=$(/usr/local/bin/c3avcompressor --version 2>/dev/null || echo "0.1.0")
+    echo "C3.AVcompressor (${VERSION}) installed successfully to /usr/local/bin/c3avcompressor"
+fi
+
+exit 0

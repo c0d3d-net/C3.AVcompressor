@@ -9,6 +9,11 @@
 
 [Latest Release](https://github.com/c0d3d-net/C3.AVcompressor/releases)
 
+### 🖥️ New: Interactive Terminal Menu Addon
+
+For an interactive, guided console interface, a dedicated terminal menu is available:  
+👉 [C3.AVcompressorMenu](https://github.com/c0d3d-net/C3.AVcompressorMenu) – Provides an intuitive text-based user interface (TUI) to easily configure compression, splitting, and extraction tasks without typing manual CLI flags.
+
 ---
 
 ## ⚡ Key Highlights

@@ -19,7 +19,7 @@ For an interactive, guided console interface, a dedicated terminal menu is avail
 ## ⚡ Key Highlights
 
 - **Neural Processing Unit (NPU) Acceleration:** Automatically detects and drives dedicated NPUs (Apple Silicon 16-Core Neural Engine with up to 38 TOPS on M4, Intel NPU via OpenVINO, AMD Ryzen AI XDNA).
-- **Faster than CUDA with Ultra-Low Power:** Uses zero-copy Unified Memory Architecture (UMA) and NPU perceptual saliency inference to outperform CUDA FFmpeg (`hevc_nvenc`) by **>2.4x - 5x** at **<1/8th - 1/10th** of the power draw.
+- **Faster than CUDA with Ultra-Low Power:** Uses zero-copy Unified Memory Architecture (UMA) and NPU perceptual saliency inference to outperform CUDA FFmpeg (`hevc_nvenc`) by **>2.4x-3.5x** at **<1/8th - 1/10th** of the power draw.
 - **Dynamic AI Rate Control (Dynamic CRF):** Performs real-time spatio-temporal complexity analysis to dynamically optimize quantization matrices (QP) and bit allocation without multi-pass VMAF stalls.
 - **Multi-Format Audio Extraction:** Extract and transcode to **AAC, AC3, DTS, WAV, MP3 / MPEG3, FLAC, Opus** with AI psychoacoustic tuning or instant lossless stream copy.
 - **Advanced Video Transcoding:** Hardware-accelerated encoding for **H.264, H.265 (HEVC), AV1, VP9, and ProRes** using Apple VideoToolbox, Linux VAAPI, and NVENC.
